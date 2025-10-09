@@ -1,10 +1,9 @@
-
 def bit_counter(nr):
+    bin_nr = str(bin(nr))[2:]
     cnt=0
-    while nr:
-        if nr%2==1:
+    for bit in bin_nr:
+        if bit=='1':
             cnt+=1
-        nr = nr//2
     return cnt
 
 sample=24

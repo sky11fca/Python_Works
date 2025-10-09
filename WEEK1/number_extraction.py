@@ -1,9 +1,7 @@
-NUMBERS="0123456789"
-
 def extract_numbers(text):
     result=[]
     for char in text:
-        if char in NUMBERS:
+        if char.isdigit():
             result.append(char)
 
     return ''.join(result)
